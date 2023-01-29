@@ -6,9 +6,7 @@ from secrets import *
 import socket
 html = ""
 
-
-# use variables instead of numbers:
-soil = ADC(Pin(28)) # Soil moisture PIN reference
+soil = ADC(Pin(28)) 
  
 #Calibraton values
 min_moisture=0
@@ -17,22 +15,14 @@ max_moisture=5800
  
 def soil_tick(var):
     global moisture
-    # read moisture value and convert to percentage into the calibration range
+    # read moisture value and convert to percentage using the calibration range
     moisture = (max_moisture-soil.read_u16())*100/(max_moisture-min_moisture) 
-    # print values
     print("moisture: " + "%.2f" % moisture +"% (adc: "+str(soil.read_u16())+")")
-
-
-
-
-
-
-tempsensor = ADC(4)
-conversion_factor = 3.3 / 65535
 
 Timer().init(freq=0.5, mode=Timer.PERIODIC, callback=soil_tick)
 
 led = machine.Pin("LED", machine.Pin.OUT)
+
 
 secrets_dict = get_secrets()
 wifi_name = secrets_dict["network_name"]
@@ -59,7 +49,6 @@ else:
     print("Connected")
     print("IP = " + wlan.ifconfig()[0])
     led.on()
-    print("Wifi connected flash - line 52")
     utime.sleep(0.3)
     led.off()
     
