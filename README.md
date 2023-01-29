@@ -19,4 +19,6 @@ Calibration:
 - Put your capaciative moisture sensor in dry soil
 - Take the highest number you see and put it as the max_moisture in `soil.py`
 
-*Instructions about shortcuts goes here*
+iPhone Shortcuts (I'd imagine there's a way to do this on android, but I have an iPhone):  
+- Click this link on your iPhone `https://www.icloud.com/shortcuts/0265b8ddcbec44a1a46f9843ef30e9a2`
+- Create a new personal automation that runs this shortcut at a specific time of day
