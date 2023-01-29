@@ -68,23 +68,6 @@ while True:
         print("Client connected from ", addr)
         request = cl.recv(1024)
         print(request)
-        
-        request = str(request)
-        led_on = request.find("/light/on")
-        led_off = request.find("/light/off")
-        print("led on = " + str(led_on))
-        print("led off = " + str(led_off))
-        
-        if led_on == 6:
-            
-            print("LED on - line 80")
-            led.on()
-            stateis = "LED ON"
-        
-        if led_off == 6:
-            print("LED off")
-            led.off()
-            stateis = "LED OFF"  
 
         response = html + str(math.ceil(moisture))
 
