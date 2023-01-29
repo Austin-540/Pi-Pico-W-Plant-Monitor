@@ -5,6 +5,7 @@ import network
 from secrets import *
 import socket
 html = ""
+import math
 
 soil = ADC(Pin(28)) 
  
@@ -83,13 +84,10 @@ while True:
         if led_off == 6:
             print("LED off")
             led.off()
-            stateis = "LED OFF"
-            
-        try:
-            response = html + str(moisture)
-        except:
-            response = html
-        
+            stateis = "LED OFF"  
+
+        response = html + str(math.ceil(moisture))
+
         cl.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\n\r\n')
         cl.send(response)
         cl.close()
