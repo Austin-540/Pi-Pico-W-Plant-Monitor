@@ -1,5 +1,4 @@
-# MIST
-Moisture Interpreting Sensor Thing
+# Raspberry Pi Pico W Wi-Fi Plant Monitor
 
 If (for some reason) you feel like using my code you will need:  
 - `Raspberry Pi Pico W`
