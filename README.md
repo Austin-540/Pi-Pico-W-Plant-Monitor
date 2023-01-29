@@ -9,7 +9,7 @@ If (for some reason) you feel like using my code you will need:
 
 Move all the files onto the Pico W  
 Edit secrets.py to have your wifi name and password  
-Set your Pico W to have a static IP
+Set your Pico W to have a static local IP
 
 Calibration:
 - Run `calibration.py`
