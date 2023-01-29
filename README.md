@@ -20,5 +20,5 @@ Calibration:
 - Take the highest number you see and put it as the max_moisture in `soil.py`
 
 iPhone Shortcuts (I'd imagine there's a way to do this on android, but I have an iPhone):  
-- Click this link on your iPhone `https://www.icloud.com/shortcuts/0265b8ddcbec44a1a46f9843ef30e9a2`
+- Click this link on your iPhone `https://www.icloud.com/shortcuts/87dc950382d74272906cdd04b460d766`
 - Create a new personal automation that runs this shortcut at a specific time of day
